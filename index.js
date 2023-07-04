@@ -40,25 +40,25 @@ async function getCoinSuccess(json, coinEmpty = false) {
                             <span>/USD</span>
                         </div>
                         <div class="coin-price" mb-3>
-                            <span class="price">$${price.toLocaleString('en-US', { style: 'currency', currency: 'USD' })}</span>
+                            <span class="price">${price.toLocaleString('en-US', { style: 'currency', currency: 'USD' })}</span>
                             <span class="change">${change}</span>
                         </div>
                     </div>
                 `;
             } catch (error) {
-                console.log('Ocorreu um erro ao obter a imagem:', error.message);
+                console.log('An error occurred while obtaining the image', error.message);
             }
         }
     } else {
         cryptoResult.innerHTML += `
             <div class="coin-logo" mb-3>
-                <img src="images/cheems-sad.jog"></img>
+                <img src="images/cheems-sad.jpg"></img>
             </div>
             <div class="coin-name" mb-3>
-                <h3>Aii.. Não encontrei</h3>
+                <h3>Aii.. Não encontrei, eu sou versão <i>FREE</i></h3>
             </div>
             <div class="coin-price" mb-3>
-                <p>Tente novamente</p>
+                <p>Tente novamente por favor...<br><i>Escreva o nome da moeda completo, exemplo: Bitcoin</i></p>
             </div>
         `;
     }
@@ -75,7 +75,7 @@ async function getImage(crypto) {
         const coinDetails = json;
         return coinDetails.image && coinDetails.image.large;
     } catch (error) {
-        console.log('Ocorreu um erro ao obter a imagem:', error.message);
+        console.log('An error occurred while obtaining the image', error.message);
         throw error;
     }
 }
