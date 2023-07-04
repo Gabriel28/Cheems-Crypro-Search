@@ -56,7 +56,6 @@ button:hover {
     height: 80px;
     border-radius: 8px;
     margin: 38px 0;
-    font-family: 'Mukta', sans-serif;
 }
 
 .coin .coin-logo{
@@ -113,15 +112,15 @@ button:hover {
 }
 
 .coin.up{
-    background: linear-gradient(90deg, #202022c2, #16cc0641);
+    background: linear-gradient(90deg, #202022c2, #16cf05a6);
 }
 
 .coin.up .coin-price .price{
-    color: #30ff20;
+    color: #000300;
 }
 
 .coin.down{
-    background: linear-gradient(90deg, #202022, #aa444436);
+    background: linear-gradient(90deg, #202022, #a32323a4);
 }
 
 .coin.down .coin-price .price{
