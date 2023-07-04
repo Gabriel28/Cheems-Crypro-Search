@@ -52,10 +52,10 @@ button:hover {
 
 .coin{
     display: flex;
-    width: 460px;
+    width: 500px;
     height: 80px;
     border-radius: 8px;
-    margin: 38px 0;
+    margin: 40px 0;
 }
 
 .coin .coin-logo{
